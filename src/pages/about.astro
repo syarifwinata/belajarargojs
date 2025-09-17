@@ -3,7 +3,7 @@ import Navigation from "./components/Navigation.astro";
 const pageTitle = "About Me";
 
 const identity = {
-    firstName: "Syarif",
+    firstName: "Syarif Winata",
 };
 
 const skill = {"html", "css"};
@@ -25,7 +25,7 @@ const skill = {"html", "css"};
 
         <p>My skills are:</p>
         <ul>
-        {skills.map((skill) => <li>{skill}</li>)}
+        {skill.map((skill) => <li>{skill}</li>)}
         </ul>
     </body>
 </html>
