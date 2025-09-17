@@ -5,6 +5,8 @@ const pageTitle = "About Me";
 const identity = {
     firstName: "Syarif",
 };
+
+const skill = {"html", "css"};
 ---
 
 <html lang="en">
@@ -20,5 +22,10 @@ const identity = {
         <h1>{pageTitle}</h1>
         <h3>About Page</h3>
         <h4>My name is : {identity.firstName}</h4>
+
+        <p>My skills are:</p>
+        <ul>
+        {skills.map((skill) => <li>{skill}</li>)}
+        </ul>
     </body>
 </html>
